@@ -25,6 +25,15 @@ jobs:
       - name: Build
         run: go build -v -o dist/service .
 
+      - name: Push to GitHub Packages
+        uses: docker/build-push-action@v1
+        with:
+          username: ${{ github.actor }}
+          password: ${{ secrets.GITHUB_TOKEN }}
+          registry: docker.pkg.github.com
+          repository: aibotsoft/black-auth-service/black-auth-service
+          tag_with_ref: true
+
 #      - name: Delete replace
 #        run: |
 #            go mod edit -dropreplace github.com/aibotsoft/micro
