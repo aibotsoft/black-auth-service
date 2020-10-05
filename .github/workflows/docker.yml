@@ -17,4 +17,4 @@ jobs:
           password: ${{ secrets.GITHUB_TOKEN }}
           registry: docker.pkg.github.com
           repository: aibotsoft/black-auth-service/black-auth-service
-          tag_with_ref: true
+#          tag_with_ref: true
