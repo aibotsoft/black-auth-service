@@ -23,7 +23,7 @@ jobs:
             ${{ runner.os }}-go-
 
       - name: Build
-        run: go build -v .
+        run: go build -v -o dist/service .
 
 #      - name: Delete replace
 #        run: |
