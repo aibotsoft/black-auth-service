@@ -11,9 +11,9 @@ jobs:
       - name: check go version
         run: go version
 
-#      - name: Check out code into the Go module directory
-#      - uses: actions/checkout@master
-#
+      - name: Check out code into the Go module directory
+      - uses: actions/checkout@master
+
 #      - name: Cache go modules
 #        uses: actions/cache@v2
 #        with:
