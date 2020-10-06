@@ -29,9 +29,9 @@ jobs:
         uses: docker/build-push-action@v1
         with:
           username: ${{ github.actor }}
-          password: ${{ secrets.GITHUB_TOKEN }}
-          registry: docker.pkg.github.com
-          repository: aibotsoft/black-auth-service/black-auth-service
+          password: ${{ secrets.CR_PAT }}
+          registry: ghcr.io
+          repository: aibotsoft/black-auth-service
           tag_with_ref: true
 
 #      - name: Delete replace
