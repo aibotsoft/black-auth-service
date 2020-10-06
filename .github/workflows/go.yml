@@ -34,6 +34,7 @@ jobs:
           repository: aibotsoft/black-auth-service
           tag_with_ref: true
 
+
 #      - name: Delete replace
 #        run: |
 #            go mod edit -dropreplace github.com/aibotsoft/micro
